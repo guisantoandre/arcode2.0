@@ -1,0 +1,12 @@
+.logo {
+   font-size: var(--logoFont);
+   font-weight: 600;
+}
+
+.logo span {
+   background: var(--gradientColor);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   color: transparent;
+}

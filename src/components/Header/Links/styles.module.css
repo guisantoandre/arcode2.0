@@ -1,0 +1,80 @@
+.navIcon,
+.closeMenuButton {
+   display: none;
+   user-select: none;
+}
+
+.menuLinks {
+   display: flex;
+   align-items: center;
+   font-size: var(--normalFont);
+   font-weight: 500;
+   gap: 0 4rem;
+}
+
+.menuLinks li a {
+   color: var(--grey1Color);
+   transition: var(--transition);
+}
+.menuLinks li a:hover {
+   color: var(--whiteColor);
+}
+
+.menuLinks li a.activeLink {
+   color: var(--whiteColor);
+}
+
+@media (max-width: 730px) {
+   .navIcon,
+   .closeMenuButton {
+      display: block;
+   }
+
+   .navMenu {
+      position: absolute;
+      background-color: var(--dark1Color);
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 4rem 2rem;
+      transform: translateY(150%);
+      transition: var(--transition);
+   }
+
+   .menuLinks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(40px, 64px));
+      gap: 4rem 4rem;
+      justify-content: center;
+      align-items: flex-start;
+   }
+
+   .menuLinks li a {
+      color: var(--whiteColor);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem 0;
+      font-size: var(--smallerFont);
+      font-weight: 500;
+   }
+
+   .closeMenuButton {
+      position: absolute;
+      top: -32px;
+      right: 15px;
+      padding: 1.2rem;
+      background-color: var(--dark1Color);
+      cursor: pointer;
+      border-radius: 4px 4px 0 0;
+   }
+
+   /* Classes to hide and show the menu */
+   .navMenu.close {
+      transform: translateY(150%);
+   }
+
+   .navMenu.open {
+      transform: translateY(0);
+   }
+}
