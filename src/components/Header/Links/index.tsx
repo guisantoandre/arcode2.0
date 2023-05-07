@@ -4,12 +4,12 @@ import Link from "next/link";
 import styles from "./styles.module.css";
 import { usePathname } from "next/navigation";
 
-import homeIcon from "@/svgs/homeicon.svg";
-import sobreIcon from "@/svgs/sobreicon.svg";
-import expIcon from "@/svgs/experienciaicon.svg";
-import projetosIcon from "@/svgs/projetosicon.svg";
-import contatoIcon from "@/svgs/contatoicon.svg";
-import closeIcon from "@/svgs/closeicon.svg";
+import homeIcon from "@/assets/svgs/homeicon.svg";
+import sobreIcon from "@/assets/svgs/sobreicon.svg";
+import expIcon from "@/assets/svgs/experienciaicon.svg";
+import projetosIcon from "@/assets/svgs/projetosicon.svg";
+import contatoIcon from "@/assets/svgs/contatoicon.svg";
+import closeIcon from "@/assets/svgs/closeicon.svg";
 import Image from "next/image";
 
 interface Props {
@@ -32,7 +32,7 @@ export default function Links({ isOpen, onClose }: Props) {
       <nav className={`${styles.navMenu} ${isOpen ? styles.open : ""}`}>
          <ul className={styles.menuLinks}>
             {allLinks.map((link) => (
-               <li key={link.href}>
+               <li key={link.text} onClick={onClose}>
                   <Link
                      className={
                         pathname === link.href

@@ -16,12 +16,27 @@
    color: var(--grey1Color);
    transition: var(--transition);
 }
+.menuLinks li a::after {
+   content: "";
+   display: block;
+   width: 0%;
+   height: 2px;
+   background-color: var(--firstColor);
+   margin-top: 0.8rem;
+   transition: var(--transition);
+}
 .menuLinks li a:hover {
    color: var(--whiteColor);
+}
+.menuLinks li a:hover::after {
+   width: 100%;
 }
 
 .menuLinks li a.activeLink {
    color: var(--whiteColor);
+}
+.menuLinks li a.activeLink::after {
+   width: 100%;
 }
 
 @media (max-width: 730px) {
@@ -39,6 +54,7 @@
       padding: 4rem 2rem;
       transform: translateY(150%);
       transition: var(--transition);
+      z-index: 100;
    }
 
    .menuLinks {
@@ -57,6 +73,10 @@
       gap: 0.5rem 0;
       font-size: var(--smallerFont);
       font-weight: 500;
+   }
+
+   .menuLinks li a::after {
+      display: none;
    }
 
    .closeMenuButton {

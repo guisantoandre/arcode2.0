@@ -10,3 +10,9 @@
    background-clip: text;
    color: transparent;
 }
+
+@media (max-width: 730px) {
+   .logo {
+      font-size: var(--bigFont);
+   }
+}

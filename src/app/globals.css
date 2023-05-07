@@ -16,6 +16,7 @@
    --whiteColor: #fcfcfc;
    --grey1Color: #b6b5b4;
    --grey2Color: #555459;
+   --detailColor: #101010;
 
    /* Font sizes */
    --smallerFont: 1.2rem;
@@ -24,11 +25,12 @@
    --normalFont: 1.8rem;
    --bigFont: 2rem;
    --biggerFont: 8rem;
-   --detailFont: 14.8rem;
+   --detailFont: 25rem;
    --logoFont: 2.4rem;
 
    /* Others */
    --transition: 0.2s ease;
+   --borderRadius: 4px;
 }
 
 *,
@@ -45,11 +47,14 @@
    max-width: 1200px;
    width: calc(100vw - 100px);
    margin: auto;
+   padding: 3.2rem 0;
+   height: calc(100vh - 112px);
 }
 
 @media (max-width: 730px) {
    .container {
-      width: calc(100vw - 50px);
+      width: calc(100vw - 45px);
+      height: 100vh;
    }
 }
 
@@ -58,6 +63,9 @@ body {
    background-color: var(--bgColor);
    color: var(--whiteColor);
    height: 100vh;
+   overflow-x: hidden;
+   position: relative;
+   z-index: -10;
 }
 
 ul {
@@ -66,4 +74,102 @@ ul {
 
 a {
    text-decoration: none;
+}
+
+#hero {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translateX(-50%) translateY(-50%);
+   z-index: -1;
+}
+
+.detail {
+   color: var(--detailColor);
+   font-size: var(--detailFont);
+   font-weight: 600;
+   position: absolute;
+   z-index: -2;
+}
+.detail1 {
+   top: 150px;
+   right: -70px;
+   letter-spacing: -10px;
+}
+.detail2 {
+   top: 20px;
+   left: 10px;
+   transform: rotate(-15deg);
+}
+.detail3 {
+   bottom: 40px;
+   right: 100px;
+   transform: rotate(15deg);
+}
+
+#figmasvgdetail {
+   position: absolute;
+   top: 70px;
+   left: 50px;
+}
+
+#htmlsvgdetail {
+   position: absolute;
+   top: 90px;
+   right: 60px;
+}
+
+#csssvgdetail {
+   position: absolute;
+   bottom: 140px;
+   left: 70px;
+}
+
+#reactsvgdetail {
+   position: absolute;
+   bottom: 180px;
+   right: 80px;
+}
+
+#figmasvgdetail,
+#htmlsvgdetail,
+#csssvgdetail,
+#reactsvgdetail {
+   display: none;
+}
+
+.slideRight {
+   opacity: 0;
+   transform: translateX(30px);
+   animation: slideRight 0.7s forwards;
+}
+
+@keyframes slideRight {
+   to {
+      opacity: 1;
+      transform: initial;
+   }
+}
+
+@media (max-width: 730px) {
+   .detail {
+      display: none;
+   }
+
+   #figmasvgdetail,
+   #htmlsvgdetail,
+   #csssvgdetail,
+   #reactsvgdetail {
+      display: block;
+   }
+
+   #figmasvgdetail,
+   #csssvgdetail {
+      width: 32px;
+   }
+
+   #htmlsvgdetail,
+   #reactsvgdetail {
+      width: 40px;
+   }
 }
