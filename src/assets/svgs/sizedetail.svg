@@ -1,0 +1,8 @@
+<svg width="162" height="162" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 81H152" stroke="#3F2806" stroke-linecap="round" stroke-dasharray="4 10"/>
+<path d="M81 10L81 152" stroke="#3F2806" stroke-linecap="round" stroke-dasharray="4 10"/>
+<path d="M152 72L161 81L152 90" stroke="#3F2806" stroke-linecap="round"/>
+<path d="M10 72L1 81L10 90" stroke="#3F2806" stroke-linecap="round"/>
+<path d="M72 10L81 1L90 10" stroke="#3F2806" stroke-linecap="round"/>
+<path d="M72 152L81 161L90 152" stroke="#3F2806" stroke-linecap="round"/>
+</svg>

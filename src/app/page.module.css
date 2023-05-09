@@ -90,4 +90,8 @@
    .heroImg {
       display: none;
    }
+
+   .heroText {
+      margin: 0 auto;
+   }
 }

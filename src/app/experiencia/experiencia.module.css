@@ -1,0 +1,80 @@
+.expContainer {
+   display: grid;
+   grid-template-columns: 38% auto;
+   align-items: center;
+   gap: 0 8rem;
+   height: 100%;
+}
+
+.titleDetail h2 {
+   font-size: var(--titleDetailFont);
+   text-transform: uppercase;
+   word-wrap: break-word;
+   line-height: 0.95;
+   letter-spacing: -5px;
+   color: var(--dark1Color);
+}
+
+.expContainer h3 {
+   font-size: var(--mediumFont);
+   color: var(--grey2Color);
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 2rem;
+   display: flex;
+   align-items: center;
+}
+.expContainer .courses h3::before,
+.expContainer .languages h3::before {
+   content: "";
+   display: inline-block;
+   width: 18px;
+   height: 18px;
+   margin-right: 1.2rem;
+}
+.courses h3::before {
+   background: url("../../assets/svgs/coursesicon.svg") center/cover no-repeat;
+}
+.languages h3::before {
+   background: url("../../assets/svgs/languagesicon.svg") center/cover no-repeat;
+}
+
+.infoWrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 8rem 0;
+}
+
+@media (max-width: 1130px) {
+   .expContainer {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      grid-gap: 3.6rem 0;
+   }
+
+   .infoWrapper {
+      padding-bottom: 12rem;
+      gap: 5.6rem 0;
+   }
+
+   .titleDetail h2 {
+      font-size: clamp(var(--aboutMeFont), 12vw, var(--titleDetailFont));
+      word-break: normal;
+      line-height: initial;
+   }
+}
+
+@media (max-width: 1130px) {
+   .expContainer {
+      grid-gap: 2rem 0;
+   }
+
+   .infoWrapper {
+      padding-bottom: 16rem;
+   }
+
+   .titleDetail h2 {
+      font-size: clamp(var(--aboutMeFont), 12vw, var(--titleDetailFont));
+      letter-spacing: -1px;
+   }
+}

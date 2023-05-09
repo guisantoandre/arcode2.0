@@ -26,7 +26,13 @@
    --bigFont: 2rem;
    --biggerFont: 8rem;
    --detailFont: 25rem;
+   --titleDetailFont: 14.8rem;
    --logoFont: 2.4rem;
+   --aboutMeFont: 3.2rem;
+
+   /* Clamps for responsives */
+   --textToSmallClamp: clamp(var(--smallFont), 2vw, var(--normalFont));
+   --textToMediumClamp: clamp(var(--mediumFont), 2.5vw, var(--normalFont));
 
    /* Others */
    --transition: 0.2s ease;
@@ -53,8 +59,7 @@
 
 @media (max-width: 730px) {
    .container {
-      width: calc(100vw - 45px);
-      height: 100vh;
+      width: calc(100vw - 50px);
    }
 }
 
@@ -109,13 +114,13 @@ a {
 
 #figmasvgdetail {
    position: absolute;
-   top: 70px;
+   top: 85px;
    left: 50px;
 }
 
 #htmlsvgdetail {
    position: absolute;
-   top: 90px;
+   top: 70px;
    right: 60px;
 }
 

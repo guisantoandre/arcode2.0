@@ -1,0 +1,7 @@
+.langWrapper li {
+   font-size: var(--textToSmallClamp);
+}
+
+.level {
+   color: var(--grey2Color);
+}

@@ -1,5 +1,5 @@
-import HeroImg from "@/components/Svgs/HeroImg";
 import styles from "./page.module.css";
+import HeroImg from "@/components/Svgs/HeroImg";
 import Emoji from "@/components/Emoji";
 import Button from "@/components/Button";
 import { HeroPattern } from "@/components/Svgs/HeroPattern";
