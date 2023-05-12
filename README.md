@@ -1,1 +1,5 @@
-**[Arcode 2.0](https://arcode.netlify.app/)** - Portifólio pessoal👋
+## Porifótlio pessoal: Arcode 2.0
+
+- Feito com Nextjs e Typescript
+
+> Link do site: **[Arcode](https://arcode.netlify.app/)** <br>
