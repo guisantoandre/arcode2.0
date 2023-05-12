@@ -3,7 +3,7 @@
 import Logo from "@/components/Header/Logo";
 import Links from "@/components/Header/Links";
 import styles from "./styles.module.css";
-import menuIcon from "@/assets/svgs/menuIcon.svg";
+import menuIcon from "@/assets/svgs/menuicon.svg";
 import Image from "next/image";
 import { useState } from "react";
 
