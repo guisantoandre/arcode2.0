@@ -12,6 +12,10 @@
    gap: 4rem 0;
 }
 
+.contactWrapper p div {
+   display: inline-block;
+}
+
 .contactWrapper p {
    font-size: var(--textToMediumClamp);
    line-height: 1.45;

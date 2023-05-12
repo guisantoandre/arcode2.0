@@ -10,6 +10,7 @@ import detail2 from "@/assets/svgs/eclipsedetail.svg";
 import detail3 from "@/assets/svgs/rectangledetail.svg";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
+import { OpenNewTabSvg } from "@/components/Svgs/OpenNewTab";
 
 export default function Sobre() {
    return (
@@ -25,16 +26,15 @@ export default function Sobre() {
                estudos em <strong>HTML</strong>, <strong>CSS</strong> e{" "}
                <strong>JavaScript</strong>. Também me aventuro em outras
                tecnologias como <strong>ReactJS</strong>,{" "}
-               <strong>Typescript</strong>,{" "}
+               <strong>Typescript</strong>, <strong>NextJS</strong> e{" "}
                <Link
                   href="https://github.com/guisantoandre"
                   target="_blank"
                   className={styles.linkGitHub}
                >
                   <strong>Git</strong>
-                  <span className={styles.openNewTabIcon}></span>
+                  <OpenNewTabSvg />
                </Link>{" "}
-               e <strong>NextJS.</strong>{" "}
             </p>
             <p>
                Tenho facilidade em aprender e trabalhar em equipe, além de estar

@@ -7,9 +7,10 @@ interface Props {
    icon?: any;
    href?: string;
    target?: string;
+   sendForm?: boolean;
 }
 
-export default function Button({ text, icon, href, target }: Props) {
+export default function Button({ text, icon, href, target, sendForm }: Props) {
    return (
       <>
          {href ? (
@@ -26,7 +27,10 @@ export default function Button({ text, icon, href, target }: Props) {
                )}
             </Link>
          ) : (
-            <button className={styles.buttonCta}>
+            <button
+               className={styles.buttonCta}
+               style={sendForm ? { opacity: 0.5, pointerEvents: "none" } : {}}
+            >
                {text}
                {icon && (
                   <Image

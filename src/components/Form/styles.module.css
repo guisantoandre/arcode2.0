@@ -30,3 +30,7 @@
    resize: none;
    height: 148px;
 }
+
+.btnFormWrapper {
+   display: inline-block;
+}

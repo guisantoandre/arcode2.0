@@ -48,11 +48,18 @@
    padding: 1rem 0;
    display: flex;
    align-items: center;
+   gap: 0.4rem;
+}
+
+.item .info a,
+.item .info a svg path,
+.gitHubLink a,
+.gitHubLink a svg path {
    transition: var(--transition);
 }
 
 .item .info a:hover {
-   color: var(--grey1Color);
+   color: var(--firstColor);
 }
 
 .gitHubLink a {
@@ -60,11 +67,16 @@
    text-transform: uppercase;
    font-weight: 700;
    color: var(--grey2Color);
-   transition: var(--transition);
    margin-top: 1.2rem;
-   display: inline-block;
+   display: flex;
+   align-items: center;
+   gap: 0.4rem;
 }
 
 .gitHubLink a:hover {
-   color: var(--grey1Color);
+   color: var(--firstColor);
+}
+.gitHubLink a:hover svg path,
+.item .info a:hover svg path {
+   fill: var(--firstColor);
 }

@@ -44,16 +44,14 @@
 .linkGitHub {
    position: relative;
    color: var(--firstColor);
+   display: flex;
+   align-items: center;
+   gap: 0.4rem;
+   width: fit-content;
 }
 
-.openNewTabIcon {
-   display: inline-block;
-   background-image: url("../../assets/svgs/opennewtabicon.svg");
-   background-size: cover;
-   background-repeat: no-repeat;
-   width: 18px;
-   height: 18px;
-   margin-left: 4px;
+.linkGitHub svg path {
+   fill: var(--firstColor);
 }
 
 .detail {

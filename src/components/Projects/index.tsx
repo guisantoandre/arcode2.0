@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { OpenNewTabSvg } from "../Svgs/OpenNewTab";
 
 interface Props {
    projects: {
@@ -51,6 +52,7 @@ export default function Projects({ projects }: Props) {
                         <p>{project.desc}</p>
                         <Link href={project.link} target="_blank">
                            Ver mais
+                           <OpenNewTabSvg />
                         </Link>
                      </div>
                   </motion.li>
@@ -60,6 +62,7 @@ export default function Projects({ projects }: Props) {
          <div className={styles.gitHubLink}>
             <Link href="https://github.com/guisantoandre" target="_blank">
                GitHub
+               <OpenNewTabSvg />
             </Link>
          </div>
       </>

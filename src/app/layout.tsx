@@ -1,6 +1,10 @@
+"use client";
+
 import Header from "@/components/Header";
 import "./globals.css";
 import { Barlow } from "next/font/google";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 
 const barlow = Barlow({
    subsets: ["latin"],
@@ -23,6 +27,7 @@ export default function RootLayout({
          <body className={barlow.className}>
             <Header />
             <main className="container">{children}</main>
+            <ToastContainer />
          </body>
       </html>
    );
