@@ -26,7 +26,7 @@
    --bigFont: 2rem;
    --biggerFont: 8rem;
    --detailFont: 25rem;
-   --titleDetailFont: 14.8rem;
+   --titleDetailFont: 15.6rem;
    --logoFont: 2.4rem;
    --aboutMeFont: 3.2rem;
 
@@ -56,7 +56,6 @@
    padding: 3.2rem 0;
    height: calc(100vh - 112px);
 }
-
 @media (max-width: 730px) {
    .container {
       width: calc(100vw - 50px);
@@ -79,6 +78,28 @@ ul {
 
 a {
    text-decoration: none;
+}
+
+.titleDetailStyles {
+   font-size: var(--titleDetailFont);
+   text-transform: uppercase;
+   word-wrap: break-word;
+   line-height: 0.95;
+   letter-spacing: -5px;
+   color: var(--dark1Color);
+}
+@media (max-width: 1130px) {
+   .titleDetailStyles {
+      font-size: clamp(var(--aboutMeFont), 12vw, var(--titleDetailFont));
+      word-break: normal;
+      line-height: initial;
+   }
+}
+@media (max-width: 730px) {
+   .titleDetailStyles {
+      font-size: clamp(var(--aboutMeFont), 12vw, var(--titleDetailFont));
+      letter-spacing: -1px;
+   }
 }
 
 #hero {

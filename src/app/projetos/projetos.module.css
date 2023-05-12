@@ -1,0 +1,32 @@
+.projectsContainer {
+   display: grid;
+   grid-template-columns: 38% auto;
+   align-items: center;
+   gap: 0 8rem;
+   height: 100%;
+}
+
+.projectList {
+   overflow-x: hidden;
+}
+
+.projectList h2 {
+   font-size: var(--mediumFont);
+   font-weight: 700;
+   color: var(--grey2Color);
+   text-transform: uppercase;
+   margin-bottom: 1.2rem;
+}
+
+@media (max-width: 1130px) {
+   .projectsContainer {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      grid-gap: 3.6rem 0;
+      height: auto;
+   }
+
+   .projectList {
+      padding-bottom: 16rem;
+   }
+}

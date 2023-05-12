@@ -1,0 +1,32 @@
+.contactForm label {
+   font-size: var(--textToSmallClamp);
+   color: var(--grey2Color);
+   display: block;
+   font-weight: 700;
+   margin-bottom: 0.8rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+   outline: none;
+   width: 100%;
+   padding: 1rem;
+   font-size: var(--textToMediumClamp);
+   font-family: inherit;
+   color: var(--whiteColor);
+   margin-bottom: 2rem;
+   background-color: var(--dark1Color);
+   border: none;
+   border-radius: var(--borderRadius);
+   transition: var(--transition);
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+   box-shadow: 0 0 0 1px var(--firstColor);
+}
+
+.contactForm textarea {
+   resize: none;
+   height: 148px;
+}

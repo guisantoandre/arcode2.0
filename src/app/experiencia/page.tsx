@@ -52,8 +52,8 @@ export default function Experiencia() {
 
    return (
       <section className={`${styles.expContainer} slideRight`}>
-         <div className={styles.titleDetail}>
-            <h2>Experiência</h2>
+         <div>
+            <h2 className="titleDetailStyles">Experiência</h2>
          </div>
          <div className={styles.infoWrapper}>
             <div className={styles.technologies}>

@@ -6,15 +6,6 @@
    height: 100%;
 }
 
-.titleDetail h2 {
-   font-size: var(--titleDetailFont);
-   text-transform: uppercase;
-   word-wrap: break-word;
-   line-height: 0.95;
-   letter-spacing: -5px;
-   color: var(--dark1Color);
-}
-
 .expContainer h3 {
    font-size: var(--mediumFont);
    color: var(--grey2Color);
@@ -56,25 +47,14 @@
       padding-bottom: 12rem;
       gap: 5.6rem 0;
    }
-
-   .titleDetail h2 {
-      font-size: clamp(var(--aboutMeFont), 12vw, var(--titleDetailFont));
-      word-break: normal;
-      line-height: initial;
-   }
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 730px) {
    .expContainer {
       grid-gap: 2rem 0;
    }
 
    .infoWrapper {
       padding-bottom: 16rem;
-   }
-
-   .titleDetail h2 {
-      font-size: clamp(var(--aboutMeFont), 12vw, var(--titleDetailFont));
-      letter-spacing: -1px;
    }
 }
