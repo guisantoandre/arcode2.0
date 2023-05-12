@@ -19,6 +19,7 @@ export default function Form() {
 
       if (name === "" || email === "" || message === "") {
          toastWarningForm();
+         setIsSending(false);
          return;
       }
 
