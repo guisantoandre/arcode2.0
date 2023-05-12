@@ -1,1 +1,1 @@
-Projeto portifólio Arcode 2.0 ( Em construção (; )
+Arcode 2.0 - Portifólio pessoal 👋
