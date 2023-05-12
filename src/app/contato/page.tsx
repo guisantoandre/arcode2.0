@@ -30,14 +30,14 @@ export default function Contato() {
                </div>
 
                <div className={styles.socialMediaContainer}>
+                  <Link href="https://github.com/guisantoandre" target="_blank">
+                     <GithubSvg />
+                     /guisantoandre
+                  </Link>
                   <Link
                      href="https://www.instagram.com/guisantoandre"
                      target="_blank"
                   >
-                     <GithubSvg />
-                     /guisantoandre
-                  </Link>
-                  <Link href="https://github.com/guisantoandre" target="_blank">
                      <InstagramSvg />
                      /guisantoandre
                   </Link>

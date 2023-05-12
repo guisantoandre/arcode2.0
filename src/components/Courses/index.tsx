@@ -26,6 +26,7 @@ export default function Courses({ courses }: Props) {
                   <Link
                      href={course.link}
                      target="_blank"
+                     download={false}
                      className={styles.certificateBtn}
                   >
                      <Image
