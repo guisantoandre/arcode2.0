@@ -48,7 +48,7 @@ export default function Experiencia() {
       },
    ];
 
-   const langArray = [{ idiom: "Inglês", level: "Avançado" }];
+   const langArray = [{ idiom: "Inglês", level: "Intermediário" }];
 
    return (
       <section className={`${styles.expContainer} slideRight`}>
