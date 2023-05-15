@@ -13,6 +13,7 @@ export default function Experiencia() {
       "Git",
       "ReactJS",
       "NextJS",
+      "Figma",
    ];
 
    const courseArray = [
