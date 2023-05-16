@@ -6,13 +6,13 @@ export default function Projetos() {
       {
          img: "/projects/memo.jpg",
          title: "Memo",
-         desc: "Jogo da memória feito com ReactJS e TypeScript.",
+         desc: "Jogo da memória feito com ReactJS e Typescript.",
          link: "https://memoogame.netlify.app/",
       },
       {
          img: "/projects/seenema.jpg",
          title: "Seenema",
-         desc: "Site de listagens de filmes desenvolvido com NextJS e TypeScript.",
+         desc: "Site de listagens de filmes desenvolvido com NextJS e Typescript.",
          link: "https://seenema.vercel.app/",
       },
       {
